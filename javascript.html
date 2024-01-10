@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/javascript.css">
+
+
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <!---Text in java script-->
+
+    <script type="text/javascript">
+
+        document.write("Here is the text")
+
+    </script>
+
+    <br><br>
+
+    <!---Number on JavaScript-->
+
+    <script type="text/javascript">
+
+        var aNum, bNum, cNum;
+
+        aNum = 5;
+        bNum = 9;
+        cNum = 12;
+        console.log(aNum);
+
+        document.write(bNum);
+        document.write( "<br>" + cNum);
+        document.write( "<br>" + (bNum + cNum));
+
+    </script>
+
+    <br><br>
+
+    <!---Creating a Paragraph-->
+
+    <script type="text/javascript">
+
+        var nameTeam = "Bayern München";
+        var teamState = "Munich";
+        var numWins = "999,999,999,999";
+        var numLose = 0;
+
+        document.write("The name of the team is " + nameTeam + ",");
+        document.write("<br>" + nameTeam + " is from " + teamState + ". ");
+        document.write("<br>" + nameTeam + " Have won " + numWins +
+                    " games and lost " +numLose + " games" + ".");
+
+    </script>
+
+    <br><br>
+
+    <!---Math-->
+
+    <script type="text/javascript">
+
+        document.write("<br>" + Math.max(4, 10, 25, 6, 100));
+        document.write("<br>" + Math.round (234.89));
+        document.write("<br>" + Math.random (1, 100));
+
+    </script>
+
+    <br><br>
+
+    <!---Buttons-->
+
+    <p id = "demo1"> JavaScript can change HTML content </p>
+
+    <button type="button" onclick='document.getElementById("demo1").innerHTML="Hello World!"'> Click here to change the text. </button>
+
+    <br><br>
+
+    <p id="demo2">JavaScript can change HTML style</p>
+
+    <button type = "button" onclick='document.getElementById("demo2") .style.color = "purple"'> Click Here to change color of the text. </button>
+
+    <p id="demo3">JavaScript can change HTML font family</p>
+
+    <button type = "button" onclick='document.getElementById("demo3") .style.fontFamily = "Times New Roman"'> Click Here to change color of the text. </button>
+
+    
+    <!---This is for image editing using Java Script-->
+
+    <br><br>
+
+    <!--JavaScript can Change HTML Attributes-->
+
+    <h3>JavaScript can Change HTML Attributes</h3>
+
+    <button type="button" onclick="document.getElementById('image1').src='/images/pic_bulbon.png'">Turn On!</button>
+
+    <img id = "image1" src="/images/pic_bulboff.png">
+
+    <button type = "button" onclick="document.getElementById('image1').src='/images/pic_bulboff.png'">Turn Off!</button>
+
+    <!--JavaScript can Change HTML Attributes (End)-->
+
+    <br><br>
+
+    <!---Alerts-->
+
+    <input type="button" value="Click Here For Alert" onclick="alert('Java Script is not working')">
+
+    <br><br>
+
+    <p id="demo4">
+
+        JavaScript extract the Date
+
+    </p>
+
+    <button type="button" onclick="documet.getElementById('demo4').innerHTML=Date"> Click for the Date </button>
+
+    <!---Alerts (End)-->
+
+    <!---Mathmatical Expresions-->
+
+    <h2>Keywords and Variables</h2>
+
+    <p id="cal"></p>
+
+    <script>
+
+        let c, y, z, a,b;
+        x = 2 + 70;
+        y = x + 10;
+        a = y - 10;
+        b = 14 + 12;
+        z = a + b * (y/z);
+
+        document.getElementById("cal").innerHTML=b
+
+    </script>
+
+    <!---Mathmatical Expresions-->
+
+    <fieldset style="background-color: rebeccapurple;">
+
+    <h2>Changing Elements</h2>
+
+    <div style="background-color: aquamarine;">
+
+    <p id="cars"></p>
+
+    <script>
+
+        const cars = [" Audi", " BMW", " Volvo", " Mercedes."];
+
+        document.getElementsByClassName('cars').innerHTML=cars;
+
+        cars [1] = " Toyota";
+
+    </script>
+
+    </div>
+
+    </fieldset>
+
+</body>
+</html>
